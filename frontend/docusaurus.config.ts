@@ -27,8 +27,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: 'docs',          // <--- SUPER IMPORTANT
-          sidebarPath: require.resolve('./sidebars.js'), // <--- FIXED
+          routeBasePath: 'docs',        
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
           showReadingTime: true,
@@ -50,11 +50,10 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',     // <--- MUST MATCH sidebars.js
+          sidebarId: 'tutorialSidebar',     
           position: 'left',
           label: 'Docs',
         },
-        // { to: '/blog', label: 'Blog', position: 'left' },
         
         { to: '/signup', label: 'Sign Up', position: 'right' },
         { to: '/chatbot', label: 'Chatbot', position: 'right' },
@@ -65,12 +64,12 @@ const config: Config = {
 footer: {
   style: 'dark',
 
-
   links: [
     {
       title: '🚀 App Navigation',
       items: [
         { label: '📘 Docs', to: '/docs/intro' },
+       
         { label: '🆕 Sign Up', to: '/signup' },
         { label: '🤖 Chatbot', to: '/chatbot' },
       ],
@@ -98,6 +97,7 @@ footer: {
     },
   ],
 
+
   copyright: `
     <div style="margin-top: 10px; font-size: 14px;">
       <strong>Humanoid AI Book</strong> © ${new Date().getFullYear()}  
@@ -109,12 +109,8 @@ footer: {
 
 
 
-
-
-
-
-
   },
 };
 
 export default config;
+
